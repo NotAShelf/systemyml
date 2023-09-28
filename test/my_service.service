@@ -1,0 +1,16 @@
+name: my_service
+install:
+  WantedBy: multi-user.target
+unit:
+  Documentation: https://example.com/my-service-doc
+  After: network.target
+  Description: Example service
+  Wants: network-online.target
+service:
+  WorkingDirectory: /path/to/working/directory
+  ExecStart: /usr/bin/my_service_executable arg1 arg2
+  Restart: always
+  User: my_user
+  Type: simple
+  Group: my_group
+environment: null

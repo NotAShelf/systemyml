@@ -1,0 +1,7 @@
+[Unit]
+Description=Example service 1
+
+[Service]
+ExecStart=/usr/bin/service1_executable arg1 arg2
+Environment=VAR1=value1
+Environment=VAR2=value2
